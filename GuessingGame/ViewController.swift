@@ -56,7 +56,8 @@ class ViewController: UIViewController {
         
         // Compare the guess provided to the number to be guessed
         // if-else if-else
-        
+        labelMessage.text = game.compareGuessToNumber(guessMade: guessProvided)
+    
 }
     // MARK: Custom functions
     

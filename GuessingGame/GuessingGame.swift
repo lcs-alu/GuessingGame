@@ -18,4 +18,19 @@ struct GuessingGame {
         numberToGuess = Int(arc4random_uniform(501)) // Generate a number between 0 and 500 (but not 501)
     }
     
+    //Functions
+    func compareGuessToNumber(guessMade: Int) -> String {
+        
+        if numberToGuess > guessMade {
+            return "Guess higher!"
+            }
+        else if numberToGuess == guessMade {
+            return "You got it!"
+        }
+        else {
+            return "Guess lower!"
+        }
+    }
+
+    
 }
